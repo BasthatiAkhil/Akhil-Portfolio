@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        .contact-container {
+            width: 70%;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 18px;
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 0 20px rgba(56,189,248,0.2);
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            font-size: 18px;
+            color: #e2e8f0;
+        }
+
+        .contact-item img {
+            width: 28px;
+            margin-right: 12px;
+            filter: drop-shadow(0 0 5px #38bdf8);
+        }
+
+        .contact-item a {
+            color: #7dd3fc;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #38bdf8;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2 class="logo">Akhil Basthati</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/skills">Skills</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<section class="contact-container">
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+        Email: <a href="mailto:akhilbasthati96@gmail.com">akhilbasthati96@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
+        GitHub: <a href="https://github.com/BasthatiAkhil" target="_blank">github.com/BasthatiAkhil</a>
+    </div>
+
+    <div class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png">
+        LinkedIn: <a href="http://www.linkedin.com/in/basthati-akhil" target="_blank">linkedin.com/in/basthati-akhil</a>
+    </div>
+
+    <div class="contact-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
+        Phone: <a href="tel:+917671978729">+91 7671978729</a>
+    </div>
+
+</section>
+
+</body>
+</html>
