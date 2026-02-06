@@ -1,0 +1,93 @@
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a; /* Dark navy background */
+    color: white;
+}
+
+.logo {
+    color: #38bdf8;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    align-items: center;
+    background: transparent;
+}
+
+nav a {
+    color: #e2e8f0;
+    margin-left: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    text-shadow: 0 0 12px rgba(56,189,248,0.7);
+}
+
+/* Section Headers */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+/* Buttons */
+button, .btn, .resume-btn, .work-btn {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Smooth Fade Animation */
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards (generic use) */
+.card {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.12);
+}
+
+/* Images */
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Footer (optional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #94a3b8;
+}
