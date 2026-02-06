@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me - Akhil Basthati</title>
+    <link rel="stylesheet" href="static/style.css">
+
+    <style>
+        .about-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: radial-gradient(circle at 20% 30%, rgba(56,189,248,0.25), transparent),
+                        radial-gradient(circle at 80% 70%, rgba(14,165,233,0.25), transparent);
+            filter: blur(90px);
+            z-index: -1;
+            animation: moveBg 8s infinite alternate ease-in-out;
+        }
+        @keyframes moveBg {
+            from { transform: scale(1); }
+            to   { transform: scale(1.2); }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10%;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 18px;
+            text-decoration: none;
+        }
+
+        .about-card {
+            width: 70%;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.07);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.12);
+            backdrop-filter: blur(12px);
+            color: #e2e8f0;
+        }
+
+        .about-card h2 {
+            color: #38bdf8;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+        }
+
+        .experience-box {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .experience-box h3 {
+            color: #38bdf8;
+            margin-bottom: 5px;
+        }
+
+        .experience-box ul {
+            margin-top: 10px;
+        }
+
+        .experience-box li {
+            margin: 8px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="about-bg"></div>
+
+<nav>
+    <h2 class="logo">Akhil Basthati</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="about-card">
+    <center>
+        <img src="static/images/akhil.jpeg" class="profile-pic">
+        <h2>About Me</h2>
+    </center>
+
+    <p>
+        Hi! I'm Akhil, an MCA student with a deep interest in technology, programming, and problem-solving. 
+        I enjoy exploring different areas of computer science such as software development, 
+        data science, machine learning, and web technologies.
+    </p>
+
+    <br>
+
+    <p>
+        Throughout my MCA journey, I have been building projects to strengthen my technical skills 
+        and understand real-world applications. I believe in continuous learning through practice 
+        and experimentation.
+    </p>
+
+    <br>
+
+    <p>
+        My career goal is to become a skilled IT professional. I am highly motivated to develop efficient 
+        applications, analyze data to gain insights, and stay updated with the latest advancements in technology. 
+        I am eager to contribute my knowledge, grow professionally, and make a meaningful impact in the IT industry.
+    </p>
+
+    <!-- Experience Section -->
+    <div class="experience-box">
+        <h2>Experience</h2>
+
+        <h3>SAS Analysis Intern</h3>
+        <p><strong>Technospark IT Solutions, Vijayawada</strong></p>
+        <p><em>January 2024 – May 2024</em></p>
+
+        <ul>
+            <li>Analyzed and validated large car sales datasets using SAS and MS Excel to ensure data accuracy and consistency.</li>
+            <li>Conducted exploratory data analysis (EDA) to identify sales trends, patterns, and key performance indicators (KPIs).</li>
+            <li>Applied statistical analysis techniques to generate insights supporting business and operational decisions.</li>
+            <li>Prepared structured analytical reports and presented findings to project supervisors and team members.</li>
+        </ul>
+    </div>
+
+</section>
+
+</body>
+</html>
